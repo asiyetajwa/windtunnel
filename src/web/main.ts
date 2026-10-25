@@ -413,9 +413,9 @@ function policyView(k: number): string {
     ${history.length ? '' : '<p class="sub">None yet.</p>'}
     ${history
       .map(
-        (r) => `<div class="hist"><div class="hist-round">Round ${String(r.n)}</div>${r.checks
+        (r) => `<div class="hist"><div class="hist-round">Round ${String(r.n)}</div><div class="hist-cards">${r.checks
           .map((c) => `<div class="d ${c.kept ? 'is-kept' : ''}"><div class="top">${c.changes.map((x) => BOUNDS[x.param].label).join(' + ')}<span class="tag ${c.kept ? 'kept' : 'rej'}">${c.kept ? 'Kept' : 'Rejected'}</span></div>${changeLines(c)}<div class="why"><b>Nemotron:</b> ${esc(c.reason)}</div><div class="why"><b>Simulator:</b> ${esc(c.verdict)}</div></div>`)
-          .join('')}</div>`,
+          .join('')}</div></div>`,
       )
       .join('')}
   </div></div>`;

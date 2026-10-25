@@ -1,0 +1,24 @@
+{
+  "name": "@windtunnel/film",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "The Wind Tunnel film (Remotion): stills of the real app, and the robot scenes drawn by the real simulator",
+  "scripts": {
+    "capture": "node scripts/capture.mjs",
+    "studio": "remotion studio src/index.ts",
+    "voiceover": "node scripts/voiceover.mjs windtunnel",
+    "render": "node scripts/render.mjs WindTunnelLandscape"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.536",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "playwright": "1.56.1",
+    "typescript": "5.9.2"
+  }
+}

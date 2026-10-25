@@ -6,3 +6,6 @@ dist/
 film/node_modules
 film/out/
 film/public/voiceover/
+film/public/music/
+film/public/sfx/
+film/thumbnail/thumbnail.html

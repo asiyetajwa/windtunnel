@@ -199,7 +199,8 @@ button.row:hover span:first-child { color: var(--purple); }
 .ptable th { text-align: left; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; padding: 0 12px 10px 0; }
 .ptable td { padding: 10px 12px 10px 0; border-top: 1px solid var(--hair); }
 .ptable tr.changed td:nth-child(3) { color: var(--purple); font-weight: 600; }
-.hist { display: grid; grid-template-columns: 110px repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; margin-top: 14px; align-items: start; }
+.hist { display: grid; grid-template-columns: 110px 1fr; gap: 10px; margin-top: 14px; align-items: start; }
+.hist-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
 .hist-round { font-weight: 700; font-size: 13px; padding-top: 12px; }
 .hist .why b { color: var(--ink-2); }
 body.film { cursor: none; }
