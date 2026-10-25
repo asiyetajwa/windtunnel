@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.log
+.windtunnel-ledger.jsonl
+film/node_modules
+film/out/
+film/public/voiceover/

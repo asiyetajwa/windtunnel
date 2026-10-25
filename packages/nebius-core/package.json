@@ -1,0 +1,9 @@
+{
+  "name": "@windtunnel/nebius-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Shared Nebius core: Token Factory client, model routing, cost and latency telemetry, and a stub mode with recorded responses.",
+  "exports": { ".": "./src/index.ts" }
+}
