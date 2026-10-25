@@ -7,7 +7,7 @@ Copy each section into the Devpost form.
 
 ## Links
 
-- **Demo video (YouTube):** to be added. It must be **Public**, under 3 minutes, with no third-party trademarks or copyrighted music.
+- **Demo video (YouTube, 1:54):** https://youtu.be/N_AFv_H6oro (must be **Public** before submitting; the rules ask for a public video under 3 minutes with no third-party trademarks or copyrighted music)
 - **Repository (public, MIT license):** https://github.com/asiyetajwa/windtunnel
 - **Thumbnail:** `docs/thumbnail.jpg` (3:2) and `docs/thumbnail-youtube.jpg` (16:9).
 

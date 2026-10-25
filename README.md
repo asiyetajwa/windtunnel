@@ -4,6 +4,8 @@ A test track for robot policies, with no robot. A warehouse robot drives 200 see
 
 **Crash it here, not on the floor.**
 
+**Demo video (1:54):** https://youtu.be/N_AFv_H6oro
+
 ## The result (recorded live run, October 24, 2026)
 
 | | Policy v0 | After the loop |
