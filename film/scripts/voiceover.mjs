@@ -82,7 +82,10 @@ for (const [i, scene] of scenes.entries()) {
   const linePause = Math.max(pause, breakSeconds);
   execFileSync('ffmpeg', [
     '-v', 'error', '-y', '-i', raw,
-    '-af', `silenceremove=start_periods=1:start_threshold=-45dB:stop_periods=-1:stop_duration=${String(linePause)}:stop_threshold=-45dB:stop_silence=${String(linePause)}`,
+    // TRIM=ends keeps every pause inside the line (cutting them made the read sound clipped) and only trims the ends.
+    '-af', process.env.TRIM === 'ends'
+      ? 'silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,apad=pad_dur=0.05'
+      : `silenceremove=start_periods=1:start_threshold=-45dB:stop_periods=-1:stop_duration=${String(linePause)}:stop_threshold=-45dB:stop_silence=${String(linePause)}`,
     '-c:a', 'libmp3lame', '-b:a', '192k',
     new URL(`${scene.id}.mp3`, outDir).pathname,
   ]);
